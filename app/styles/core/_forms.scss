@@ -1,0 +1,42 @@
+/*******************************************************************************
+*
+*  Core » Forms
+*
+*  Contains all form styles. It was
+*  heavily based on Paul Irish's HTML5 Boilerplate.
+*
+*  http://html5boilerplate.com/
+*
+*******************************************************************************/
+
+input, select { vertical-align: middle; }
+
+select, input, textarea, button { font: 99% sans-serif; }
+
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+
+textarea { overflow: auto; }
+
+input[type=text],
+input[type=email],
+input[type=url],
+textarea {
+  @extend %rounded-edges;
+  border: solid 1px #CCCCCC;
+  background: #fff;
+  height: 40px;
+  padding: 0 10px 0 10px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+}
+
+::-webkit-input-placeholder {}
+
