@@ -1,0 +1,83 @@
+{"data": [
+  {
+    "id": "1",
+    "type": "sac",
+    "attributes": {
+      "title": "Como alterar meu cadastro?",
+      "body": "Para atualizar seus dados cadastrais, clique em 'Seu espaço' faça o login (e-mail e senha) e escolha a opção 'Alterar seus dados cadastrais'."
+    }
+  },
+  {
+    "id": "2",
+    "type": "sac",
+    "attributes": {
+      "title": "Alterar meu email?",
+      "body": "O seu e-mail é o principal canal de comunicação entre o magazineluiza.com e você, por isso, mantenha-o sempre atualizado. Para alterá-lo é necessário acessar em nosso site o link 'Seu espaço', fazer o login (e-mail e senha) e selecionar a opção 'Alterar seu e-mail. Digite os campos com asteriscos, obrigatórios, e clique em' atualizar."
+    }
+  },
+  {
+    "id": "3",
+    "type": "sac",
+    "attributes": {
+      "title": "Alterar minha senha",
+      "body": "Para alterar a senha, é necessário acessar em nosso site o link 'Seu espaço', fazer login (e-mail e senha) e selecionar a opção 'Alterar sua senha'. Digite os campos com asterisco, obrigatórios, e clique em 'atualizar'."
+    }
+  },
+  {
+    "id": "4",
+    "type": "sac",
+    "attributes": {
+      "title": "Como funciona a montagem de móveis?",
+      "body": "Nós não montamos os produtos. O serviço de montagem deve ser contratado pelo cliente. O atendimento sobre trocas e devoluções, ou a solicitação de peças após a montagem, será válida apenas para produtos que apresentem problemas de fabricação. Para os produtos que apresentarem problemas de fabricação, você poderá pedir a Troca ou Devolução e ainda solicitar peças depois da montagem. O prazo para solicitação é de até 07 dias corridos, após a entrega do produto, tá? Pra saber mais sobre a nossa política de Trocas e Devoluções, é só"
+    }
+  },
+  {
+    "id": "5",
+    "type": "sac",
+    "attributes": {
+      "title": "Quais as formas de pagamento aceita?",
+      "body": "<p> Aceitamos as seguintes formas de pagamento no nosso site: </p> <p> Cartões de Crédito (parcelas até 12x): MasterCard, Visa, American Express, Diners, Cartão Luiza Ouro e Cartão Luiza Preferencial; </p> <p> Débito Online (à vista): Para clientes Bradesco para compras até R$2.000,00; </p> <p> Boleto Bancário (à vista): Pagamento pode ser efetuado em qualquer banco.</p>"
+    }
+  },
+  {
+    "id": "6",
+    "type": "sac",
+    "attributes": {
+      "title": "Politica de trocas e devolução",
+      "body": " <p> Garantir a satisfação e o bem-estar de nossos clientes faz parte da missão do Magazine Luiza. Para que seus direitos sejam respeitados, criamos uma 'Política de Troca e Devolução', com base no Código de Defesa do Consumidor, demonstrando que a relação entre o magazineluiza.com e você é baseada na confiança. Todas as solicitações que envolvam troca e devolução deverão ser comunicadas diretamente à nossa Central de Atendimento. Conheça a seguir as regras dessa política e em quais situações poderá utilizá-la: </p> <p> DEVOLUÇÃO POR ARREPENDIMENTO OU DESISTÊNCIA </p> <p> Caso você receba o produto e queira desistir da compra, você tem o direito de devolvê-lo e receber a restituição do valor de seu pedido. O prazo para desistência da compra é de 07 (sete) dias corridos a contar do recebimento do produto. O pedido só será cancelado caso o produto esteja em sua embalagem original, sem indícios de uso, sem violação do lacre original do fabricante, acompanhado de nota fiscal, manual e todos os seus acessórios. O cancelamento do pedido só será realizado após análise do produto pelo magazineluiza.com. Essa análise será feita em até 05 (cinco) dias úteis, contando a partir do recebimento do produto. Caso o produto atenda às exigências acima, a restituição do valor pago será conforme opções de pagamento abaixo: </p> <p> Cartão de crédito: será solicitado o cancelamento do débito à administradora do seu cartão. Caso isso já tenha sido feito, o estorno das parcelas pagas poderá ocorrer em até 02 (duas) faturas subseqüentes. Lembramos que esse procedimento é de responsabilidade da administradora do cartão. <br/> Boleto bancário: a restituição será feita em sua conta corrente em até 10 (dez) dias úteis. <br/> Débito on-line: a restituição será feita em sua conta corrente em até 10 (dez) dias úteis. <br/> Caso seu cancelamento não tenha sido aprovado após a análise pelo fato do produto não estar nas condições listadas acima, o mesmo será devolvido sem consulta prévia.  </p> <p> AVARIA </p> <p> No ato do recebimento, certifique-se das condições do produto. Caso detecte a avaria no ato da entrega, recuse o recebimento do produto e notifique imediatamente nossa Central de Atendimento. Caso você receba a mercadoria e esta apresente alguma avaria de transporte, é necessário que o produto esteja em sua embalagem original, sem indícios de uso, sem violação do lacre original do fabricante, acompanhado de nota fiscal, manual e todos os seus acessórios para que seja feita a substituição por outro produto da mesma espécie (modelo e marca). O prazo para entrar em contato com nossa Central de Atendimento ao cliente é de 07 (sete) dias corridos a contar do recebimento do produto. A troca ou cancelamento do pedido só serão realizados após análise do produto pelo magazineluiza.com. O prazo total para a troca irá variar de acordo com a região onde a coleta e a nova entrega serão realizadas.  </p> <p> PRODUTO COM DEFEITO </p> <p> A solicitação de troca deverá ser comunicada à nossa Central de Atendimento ao cliente em até 7 (sete) dias corridos, contando a partir da data do recebimento. Dentro desse prazo, o cliente tem o direito de solicitar a troca, desde que o produto esteja na embalagem original, sem indícios de mau uso, sem violação do lacre original do fabricante (em caso de computadores e notebooks), acompanhado de nota fiscal, manual e todos os seus acessórios. O prazo para coleta do produto será informado via e-mail ou telefone. Os produtos serão analisados pelo magazineluiza.com, podendo ser devolvidos sem consulta prévia no caso de descumprimento dos critérios listados acima ou que não seja constatado qualquer defeito. O prazo total para a troca irá variar de acordo com a região onde a coleta e a nova entrega serão realizadas. Se o produto adquirido em nosso site apresentar defeito após 07 (sete) dias a contar da data do recebimento, mas dentro do prazo de garantia do fabricante, você deverá entrar em contato com o fabricante para comunicar o fato e obter esclarecimentos. Se desejar poderá também se dirigir a uma das Assistências Técnicas ou Postos Autorizados credenciados pelo próprio fabricante, indicadas no manual com posse da sua nota fiscal. Caso não consiga contato com o fabricante, avise a nossa Central de Atendimento ao Cliente.  </p> <p> PRODUTO EM DESACORDO COM O PEDIDO </p> <p> Caso receba algum produto em desacordo com o seu pedido, você deverá recusar a entrega e entrar em contato imediatamente com nossa Central de Atendimento. Caso identifique o erro após o recebimento, você não deverá abrir o lacre original e deverá notificar imediatamente nossa Central de Atendimento. O prazo para coleta do produto será informado via e-mail ou telefone. <br/> O produto correto será enviado após a coleta com no máximo o dobro do prazo acordado no ato da compra. Caso o produto esteja indisponível em nosso estoque, este será substituído por outro no mesmo valor. Contudo, caso você não queira um produto similar, terá o direito de solicitar o cancelamento da compra ou até mesmo a troca por outra mercadoria que seja do mesmo valor.  </p> <p> TROCAS PARA O ESTADO DE SÃO PAULO </p> <p> Para sua comodidade, informamos que ao comprar um produto no site magazineluiza.com, é possível efetuar a troca também em qualquer loja física do Magazine Luiza dentro do Estado de São Paulo (clique e encontre a loja mais próxima de você). Para executar a troca, será necessária a apresentação da Nota Fiscal de compra. <br/> Importante: o produto a ser trocado deverá estar 100% íntegro em termos de embalagem e acessórios, sem avarias ou qualquer tipo de deformidade. Caso contrário, entre em contato com nosso atendimento pelo telefone 0800-34-4000.</p>"
+    }
+  },
+  {
+    "id": "7",
+    "type": "sac",
+    "attributes": {
+      "title": "Posso agendar minha entrega",
+      "body": "<p> Ainda não é possível fazer o agendamento de entrega, uma vez que não podemos antecipar o roteiro programado para cada região.  </p>"
+    }
+  },
+  {
+    "id": "8",
+    "type": "sac",
+    "attributes": {
+      "title": "Como faço para receber ofertas?",
+      "body": "<p> O Magazineluiza Especial é um serviço que leva para você ofertas e promoções antecipadas e com diversos benefícios, como: </p> <p> Só Hoje - Geralmente às segundas-feiras, as melhores ofertas do mercado com antecipação para os clientes cadastrados no serviço. A melhor campanha do magazineluiza.com chega para você antes de todo mundo! Já no domingo, você tem acesso a produtos especiais com preços arrebatores!  </p> <p> Ofertas Exclusivas - Produtos enviados por e-mail que possuem preços diferenciados do site, exclusivos para você.  </p> <p> Campanhas Promocionais - Todos os anos uma campanha inédita recheada de novidades exclusivas para você.  </p> <p> Lançamentos - As melhores novidades do mercado selecionadas só para você.  </p> <p> Segurança - Aqui você compra com segurança! Seus dados nunca são solicitados por e-mail. Nosso site oferece um ambiente seguro e tranqüilo para você realizar seus sonhos.  </p> <p> Atendimento 10 estrelas - Só no magazineluiza.com você encontra o melhor atendimento do mercado, com pessoas altamente qualificadas para lhe atender via e-mail, chat on-line e televendas.  </p> <p> Para receber nossas ofertas você poderá realizar seu cadastro completo clicando em 'Seu espaço' no menu superior do site, ou realizar o cadastro simples informando apenas seu nome e e-mail para o recebimento de ofertas e promoções. Para fazer o cadastro simples acesse a home page do nosso site, e preencha as informações no canto superior direito da página, logo abaixo das principais ofertas.  </p> "
+    }
+  },
+  {
+    "id": "9",
+    "type": "sac",
+    "attributes": {
+      "title": "Posso comprar por telefone?",
+      "body": "<p> Sim, dispomos de um Televendas com consultores de vendas especializados para lhe oferecer um atendimento personalizado. Televendas* SP (11) 3508 - 9900 - Outras localidades, clique <a href='/outros-ddds'>aqui</a>.  </p> <p> *De segunda a sexta-feira das 8h30 às 24h. Sábados e domingos das 9h às 24h (exceto feriados).  </p>"
+    }
+  },
+  {
+    "id": "10",
+    "type": "sac",
+    "attributes": {
+      "title": "Fale conosco",
+      "body": "<p> <strong>0800-34-4000</strong> </p> <p> <strong>Atendimento via telefone:</strong> Segunda à  Sexta das 9h00 às 20h30 <br/> Sábado das 9h00 às 18h00 - exceto feriados <br/> <strong>Atendimento via chat:</strong> Segunda à Sexta das 9h00 às 19h00 <br/> Sábado das 9h00 às 17h30 - exceto feriados </p> "
+    }
+  }
+  ]
+}
