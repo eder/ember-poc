@@ -1,0 +1,7 @@
+<li>
+  <h1  {{action 'showContent'}}>{{item.title }}</h1>
+  {{#if isClicked}}
+    <p>{{{item.body}}}</p>
+  {{/if}}
+</li>
+{{yield}}
