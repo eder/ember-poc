@@ -1,8 +1,10 @@
 <h1>SAC</h1>
 <ul>
   {{#each model as |item| }}
-    <li>{{item.title }}</li>
+    <li>
+      {{item.title }}
+      {{item.body}}
+    </li>
   {{/each}}
 </ul>
 {{outlet}}
-
