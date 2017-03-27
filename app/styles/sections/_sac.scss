@@ -1,0 +1,41 @@
+/* ==========================================================================
+  Section » home
+========================================================================== */
+
+.sac-container {
+  padding: 15px;
+  > h1 {
+    font-family: 'Arial';
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #0d6ebe;
+    padding-bottom: 20px;
+    margin-top: 15px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.sac-list-container {
+  list-style: none;
+  li {
+     border-bottom: 1px solid #e5e5e5;
+    h1, p {
+      font-family: ArialMT;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 50px;
+      letter-spacing: normal;
+      color: #4a4a4a;
+    }
+    p {
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
+  }
+
+}
