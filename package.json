@@ -43,7 +43,6 @@
   },
   "private": true,
   "dependencies": {
-    "ember-cli-amp": "^0.1.2",
-    "ember-cli-sass": "^6.1.1"
+    "ember-cli-sass": "^6.1.2"
   }
 }
