@@ -28,7 +28,7 @@ select { color: $TEXT-COLOR; }
 *  =Links
 *********************************************************************/
 a {
-  outline: none !important;
+  outline: none;
 }
 a, a:visited {
   color: none;

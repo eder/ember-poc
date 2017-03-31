@@ -1,0 +1,57 @@
+.sac-container {
+  padding: 15px;
+}
+.sac-container > h1 {
+  font-family: 'Arial';
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #0d6ebe;
+  padding-bottom: 20px;
+  margin-top: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.sac-list-container {
+  list-style: none;
+}
+.sac-list-container section {
+  border-bottom: 1px solid #e5e5e5;
+}
+.sac-list-container section h1, .sac-list-container section p {
+  font-family: ArialMT;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 50px;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
+.sac-list-container section p {
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+amp-accordion section[expanded] .show-more {
+  display: none;
+}
+amp-accordion section:not([expanded]) .show-less {
+  display: none;
+}
+.nested-accordion h4 {
+  font-family: 'Arial';
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #0d6ebe;
+  padding-bottom: 20px;
+  margin-top: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+amp-accordion#hidden-header section[expanded] h4 {
+  border: none;
+}

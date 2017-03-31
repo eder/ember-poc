@@ -1,7 +1,5 @@
-<li>
-  <h1  {{action 'showContent'}}>{{item.title }}</h1>
-  {{#if isClicked}}
+<section expanded>
+  <h4 {{action 'showContent'}}>{{item.title }}</h4>
     <p>{{{item.body}}}</p>
-  {{/if}}
-</li>
+</section>
 {{yield}}

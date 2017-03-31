@@ -1,10 +1,14 @@
-<section class="sac-container">
+<div class="sac-container">
   <h1>Dúvidas frequentes</h1>
-  <ul class="sac-list-container">
+  <section class="sac-list">
+  <amp-accordion class="sac-list-container">
     {{#each model as |item| }}
-     {{#sac-list item=item}}{{/sac-list}}
+      <section expanded>
+        <h1 {{action 'showContent'}}>{{item.title }}</h1>
+        <div>{{{item.body}}}</div>
+      </section>
     {{/each}}
-
- </ul>
-</section>
+ </amp-accordion>
+ </section>
+</div>
 {{outlet}}
