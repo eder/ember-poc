@@ -31,16 +31,25 @@
                 </div>
         </div>
         <div id="search" class="row clearfix hide">
-            <form accept-charset="utf-8">
-                <span class="cancel">cancelar</span>
-                <div class="content-search-input">
-                    <input type="search" id="id_search" name="search" value="" placeholder="Encontre seu produto" autocomplete="off" autocorrect="off" autocapitalize="none">
-                    <span class="icon icon-search"></span>
-                </div>
-            </form>
+          <form method="GET"
+          class="p2"
+          action="/components/amp-form/submit-form"
+          target="_top">
+          <div class="content-search-input ampstart-input inline-block relative mb3">
+            <input
+              type="search"
+              id="id_search"
+              name="search"
+              value=""
+              placeholder="Encontre seu produto"
+            >
+            <span class="icon icon-search"></span>
+          </div>
+          <input type="submit"
+          value="OK"
+          class="ampstart-btn caps">
+        </form>
         </div>
         <span class="color-bar row"></span>
     </div>
 </div>
-
-
