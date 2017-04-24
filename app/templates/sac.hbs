@@ -3,7 +3,7 @@
   <section class="sac-list">
   <amp-accordion class="sac-list-container">
     {{#each model as |item| }}
-      <section expanded>
+      <section>
         <h1 {{action 'showContent'}}>{{item.title }}</h1>
         <div>{{{item.body}}}</div>
       </section>
