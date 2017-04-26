@@ -12,5 +12,6 @@ export default Ember.Route.extend({
     amp.set('canonicalUrl', './');
     amp.registerExtension('accordion');
     amp.registerExtension('form');
+    amp.registerExtension('sidebar');
   }
 });

@@ -1,8 +1,1003 @@
-/*******************************************************************************
-*
-*  Layout » Main
-*  
-*  Contains the base for the layout: grid and main components.
-*
-*******************************************************************************/
+html, body {
+    height: 100%;
+}
 
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    position: relative;
+    -webkit-text-size-adjust: none;
+    overflow-x: hidden;
+}
+
+body.white {
+    background: white;
+}
+body.white #content{
+    background: #efefef;
+}
+body.white .container #search,
+body.white .container span.bar,
+body.white .container div.login-info{
+    display: none;
+}
+
+body span.color-bar  {
+    height: 7px;
+    display: block;
+    width: 100%;
+    background: 1px solid #c0c0c0;
+    background: -moz-linear-gradient(left,  #fec309 0%, #fec309 10%, #fd8308 10%, #fd8308 20%, #d23c27 20%, #d23c27 30%, #d21385 30%, #d21385 40%, #aa00d5 40%, #aa00d5 50%, #4710d5 50%, #4710d5 60%, #285fd5 60%, #285fd5 70%, #2db7d5 70%, #2db7d5 80%, #30d992 80%, #30d992 90%, #37c41e 90%, #37c41e 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fec309), color-stop(10%,#fec309), color-stop(10%,#fd8308), color-stop(20%,#fd8308), color-stop(20%,#d23c27), color-stop(30%,#d23c27), color-stop(30%,#d21385), color-stop(40%,#d21385), color-stop(40%,#aa00d5), color-stop(50%,#aa00d5), color-stop(50%,#4710d5), color-stop(60%,#4710d5), color-stop(60%,#285fd5), color-stop(70%,#285fd5), color-stop(70%,#2db7d5), color-stop(80%,#2db7d5), color-stop(80%,#30d992), color-stop(90%,#30d992), color-stop(90%,#37c41e), color-stop(100%,#37c41e));
+    background: -webkit-linear-gradient(left,  #fec309 0%,#fec309 10%,#fd8308 10%,#fd8308 20%,#d23c27 20%,#d23c27 30%,#d21385 30%,#d21385 40%,#aa00d5 40%,#aa00d5 50%,#4710d5 50%,#4710d5 60%,#285fd5 60%,#285fd5 70%,#2db7d5 70%,#2db7d5 80%,#30d992 80%,#30d992 90%,#37c41e 90%,#37c41e 100%);
+    background: -o-linear-gradient(left,  #fec309 0%,#fec309 10%,#fd8308 10%,#fd8308 20%,#d23c27 20%,#d23c27 30%,#d21385 30%,#d21385 40%,#aa00d5 40%,#aa00d5 50%,#4710d5 50%,#4710d5 60%,#285fd5 60%,#285fd5 70%,#2db7d5 70%,#2db7d5 80%,#30d992 80%,#30d992 90%,#37c41e 90%,#37c41e 100%);
+    background: -ms-linear-gradient(left,  #fec309 0%,#fec309 10%,#fd8308 10%,#fd8308 20%,#d23c27 20%,#d23c27 30%,#d21385 30%,#d21385 40%,#aa00d5 40%,#aa00d5 50%,#4710d5 50%,#4710d5 60%,#285fd5 60%,#285fd5 70%,#2db7d5 70%,#2db7d5 80%,#30d992 80%,#30d992 90%,#37c41e 90%,#37c41e 100%);
+    background: linear-gradient(to right,  #fec309 0%,#fec309 10%,#fd8308 10%,#fd8308 20%,#d23c27 20%,#d23c27 30%,#d21385 30%,#d21385 40%,#aa00d5 40%,#aa00d5 50%,#4710d5 50%,#4710d5 60%,#285fd5 60%,#285fd5 70%,#2db7d5 70%,#2db7d5 80%,#30d992 80%,#30d992 90%,#37c41e 90%,#37c41e 100%);
+    background-size: 100% ;
+}
+
+.hidden-text-indent {
+    text-indent: -9999px;
+}
+
+.navigation, .container,
+.navigation .subcategory-list,
+.navigation nav .category-list-back,
+.navigation .category-list,
+.navigation .quick-access-list,
+#search .cancel,
+#search .content-search-input {
+    transition: left 0.3s, right 0.3s, margin 0.3s;
+    -webkit-transition: left 0.3s, right 0.3s, margin 0.3s;
+    -moz-transition: left 0.3s, right 0.3s, margin 0.3s;
+    -o-transition: left 0.3s, right 0.3s, margin 0.3s;
+    -ms-transition: left 0.3s, right 0.3s, margin 0.3s;
+}
+
+.container .scroll-top {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -85%;
+    z-index: 0;
+    list-style: none;
+    background: #0083ca;
+}
+
+.navigation.black {
+    background: #000000 ;
+}
+
+.navigation.lf {
+}
+
+.navigation.move {
+    width: 100%;
+    left: 0;
+    position: relative;
+    display: block;
+}
+
+.navigation .login-info .content {
+    height: 53px;
+}
+
+.navigation .login-info .content a {
+    text-decoration: none;
+    height: 100%;
+    display: table;
+    padding: 0 5%;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.navigation .login-info .content a i {
+    font-size: 60px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 12px;
+}
+
+.navigation .login-info .content a .greeting {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.navigation .login-info .content a .greeting small {
+    margin-bottom: 1px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.navigation .login-info .quick-access {
+    display: block;
+    height: 36px;
+    padding: 0 14px;
+}
+
+.navigation .login-info .quick-access .near-store {
+    float: left;
+    display: table;
+}
+
+.navigation .login-info .quick-access .near-store a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navigation .login-info .quick-access .orders {
+    float: right;
+    display: table;
+}
+
+.navigation .login-info .quick-access .orders a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navigation .login-info .quick-access span.icon {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 21px;
+    padding-right: 5px;
+}
+
+.navigation .login-info .quick-access span.text {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+.navigation .login-info .menu-bar {
+  height: 7px;
+  display: block;
+  width: 100%;
+  background: #0073b1;
+}
+
+.navigation.black .login-info .menu-bar {
+  background: #000000 ;
+}
+
+.navigation.lf .login-info .menu-bar {
+}
+
+.navigation .menu-title-container {
+    display: initial ;
+    height: 52px ;
+}
+
+.navigation .menu-title-container.fixed {
+    position: fixed;
+    top: 0;
+}
+
+.navigation nav .category-list-back {
+    position: relative;
+    width: 15%;
+    padding: 16px 0 8px 0 ;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 20px;
+    color: #8c8c8c;
+    background: #FFFFFF;
+    cursor: pointer;
+    float: left;
+}
+
+.navigation .category-list {
+    background-color: #ffffff;
+    left: 0;
+    position: relative;
+    width: 100%;
+}
+
+.navigation .special-list {
+    background-color: #ffffff;
+    left: 0;
+    position: relative;
+    padding-left: 15px;
+    width: 100%;
+    border-bottom: 15px solid #f4f4f4;
+    display: none;
+}
+
+.navigation .category-list.move {
+    left: -100%;
+}
+
+.navigation .subcategory-list {
+    left: 100%;
+    background-color: #f2f2f2;
+    position: absolute;
+    overflow: auto;
+}
+
+.navigation .subcategory-list.move {
+    width: 100%;
+    left: 0;
+}
+
+.navigation .subcategory-list .menu-font {
+    padding-left: 12px;
+}
+
+.navigation .subcategory-list li:first-child .menu-font {
+    color: #0083ca;
+    font-weight: initial;
+}
+
+.navigation .subcategory-list .title {
+    background-color: #e5e5e5;
+    color: #0083ca;
+}
+
+.navigation .quick-access-list {
+    background-color: #f1f1f1;
+    left: 0;
+    position: relative;
+    width: 100%;
+}
+
+.navigation .quick-access-list.move {
+    left: -100%;
+}
+
+.navigation span.bottom {
+    display: block;
+    width: 100%;
+    height: 7px;
+    background-color: #0083ca;
+}
+
+.navigation.black span.bottom {
+    background-color: #000000 ;
+}
+
+.navigation.lf span.bottom {
+}
+
+.navigation .subcategory-list li.cat-item {
+    height: initial;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navigation .subcategory-list li:first-child.cat-item {
+    padding: 0;
+}
+
+.navigation li.cat-item {
+    width: 100%;
+    height: 52px;
+}
+
+.navigation .special-list li.cat-item {
+    width: 95%;
+    height: 52px;
+}
+
+.navigation li.cat-item.one-click-buy {
+    height: 80px;
+}
+
+.navigation li.cat-item.sac {
+    height: 95px;
+}
+
+.navigation .cat-item a,
+.navigation .cat-item div {
+    display: table;
+    width: 100%;
+    text-decoration: none;
+    height: 100%;
+    cursor: pointer;
+}
+
+.navigation .subcategory-list .cat-item a:visited {
+    color: #e5e5e5;
+}
+
+.navigation .subcategory-list .cat-item:first-child a {
+    height: 52px;
+}
+
+.navigation .subcategory-list .cat-item:first-child a span {
+    height: 100%;
+}
+
+.navigation .subcategory-list .cat-item .name {
+    border: none;
+}
+
+.navigation .cat-item a span,
+.navigation .cat-item div span {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+.navigation .cat-item .name {
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 4px;
+}
+
+.navigation .special-list li span.name {
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 0px;
+}
+
+.navigation .menu-list .cat-item .name small {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.navigation .menu-list li:last-child span,
+.navigation .special-list li:last-child span,
+.navigation .menu-list li:last-child .icon-arrow {
+    border-bottom: none;
+}
+
+.navigation .subcategory-list .cat-item .icon-arrow {
+    border: none ;
+}
+
+.navigation .menu-list .cat-item .icon-arrow {
+    font-size: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #c5c5c5;
+    width: 35px;
+}
+
+.navigation .icon-categ {
+    font-size: 25px;
+    width: 15%;
+}
+
+.navigation .icon {
+    text-align: center;
+}
+
+.navigation .quick-access-list .icon {
+    color: #757575;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navigation .quick-access-list .sac .subtitle {
+    display: block;
+    color: #757575;
+    font-size: 17px;
+}
+
+.navigation .quick-access-list .logout .menu-font {
+    color: #8c8c8c;
+    position: relative;
+    left: 20px;
+}
+
+.container {
+    min-height: 100%;
+    min-width: 100%;
+    background-color: white;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.container.move {
+    left: 85%;
+    position: fixed;
+    overflow: hidden;
+}
+
+.container .scroll-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    border-radius: 30px;
+    background-color: #0083ca;
+    text-align: center;
+    cursor: pointer;
+    z-index: 3000;
+    opacity: 0;
+}
+
+.container.black .scroll-top {
+    background-color: #000000;
+}
+
+.container.lf .scroll-top {
+}
+
+.container .scroll-top.fixed {
+    opacity: 1;
+}
+
+.container .scroll-top small {
+    position: relative;
+    top: 13px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.container #header {
+    height: 49px;
+    overflow: inherit ;
+}
+
+.container #header.with-search {
+    height: 96px;
+}
+
+#header-content {
+    overflow: inherit ;
+    position: relative;
+    background: #0083ca;
+}
+
+.container.black #header-content {
+    background: #000000 ;
+}
+
+.container.lf #header-content {
+}
+
+.container #header-content.search-cover {
+    z-index: 30;
+}
+
+.container #header-content.fixed {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+}
+
+.container .top {
+    height: 42px;
+    background: #0083ca;
+    position: relative;
+}
+
+.container.black .top {
+    background: #000000 ;
+}
+
+.container.lf .top {
+}
+
+.container .top h1,
+.container .top h2,
+.container .top span {
+    display: block;
+}
+
+.container .top #menu-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    cursor: pointer;
+    width: 65px;
+    height: 50px;
+}
+
+.container .top #support-toggle {
+    display: none;
+}
+
+.container .top #support-toggle .seller-name {
+    font-family: Arial;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container .top #support-toggle .icon-back {
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    background: url('../../img/sprite.png') no-repeat 0 -954px;
+    top: 12px;
+    left: 15px;
+}
+
+.container .top #search-toggle {
+    position: absolute;
+    top: 7px;
+    left: 50px;
+    cursor: pointer;
+}
+
+.container .top #search-toggle p {
+    text-decoration: none;
+}
+
+.container .top #search-toggle p > span {
+    padding-top: 2px;
+}
+
+.container .top #cart {
+    position: absolute;
+    top: 9px;
+    right: 14px;
+}
+
+.container .top #cart sup {
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    font-weight: lighter;
+    color: #fff;
+    position: absolute;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    right: -5px;
+    top: 14px;
+    display: none;
+    line-height: 16px;
+    background: #3eca27;
+    font-size: 11px;
+}
+
+.container .top #cart a {
+    text-decoration: none;
+}
+
+.container .top .icon {
+    color: white;
+}
+
+.container .top .icon-drawer {
+    font-size: 20px;
+    top: 10px;
+    position: absolute;
+    left: 8px;
+    z-index: 2999;
+}
+
+.container .top .icon-search {
+    font-size: 18px;
+}
+
+
+.container .top .icon-logo {
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+    font-size: 125px;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.container .top .icon-cart {
+    font-size: 23px;
+}
+
+.container div.login-info{
+/*
+    background: #065cac;
+    background: -moz-linear-gradient(top, #008be2 0%, #065cac 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#008be2), color-stop(100%,#065cac));
+    background: -webkit-linear-gradient(top, #008be2 0%,#065cac 100%);
+    background: -o-linear-gradient(top, #008be2 0%,#065cac 100%);
+    background: -ms-linear-gradient(top, #008be2 0%,#065cac 100%);
+    background: linear-gradient(top, #008be2 0%,#065cac 100%);
+*/
+    background: #d8d8d8;
+    background: -moz-linear-gradient(top, #d8d8d8 0%, #dadada 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d8d8d8), color-stop(100%,#dadada));
+    background: -webkit-linear-gradient(top, #d8d8d8 0%,#dadada 100%);
+    background: -o-linear-gradient(top, #d8d8d8 0%,#dadada 100%);
+    background: -ms-linear-gradient(top, #d8d8d8 0%,#dadada 100%);
+    background: linear-gradient(top, #d8d8d8 0%,#dadada 100%);
+    display: none;
+    font-size: 10px;
+    line-height: 1.2em;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: right;
+    color: #848484;
+    border-bottom: 1px solid #ccc;
+}
+
+.container div.login-info span{
+    padding-right: 10px;
+}
+
+.container div.login-info span a{
+    text-decoration: none;
+    color: #848484;
+}
+.container div.login-info span a i{
+    text-decoration: underline;
+    font-style: normal;
+}
+
+#id_search {
+    height: 13px;
+    background: none;
+    font-family: Arial;
+}
+
+#search {
+    height: 47px;
+    background: #0083ca;
+    overflow: hidden;
+}
+
+.container.black #search {
+    background: #000000 ;
+}
+
+.container.lf #search {
+}
+
+#search form {
+    text-align: center;
+}
+
+.content-search-input {
+    width: auto;
+    background-color: #ffffff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid white;
+    height: 35px;
+    margin: 0 10px 0 10px;
+    position: relative;
+}
+
+.focus .content-search-input {
+    margin: 0 90px 0 10px ;
+}
+
+.content-search-input .icon-search {
+    float: right;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 20px;
+    color: #8c8c8c;
+}
+
+#search .cancel {
+    color: white;
+    text-align: center;
+    float: right;
+    position: relative;
+    top: 6px;
+    right: -70px;
+    cursor: pointer;
+    font-weight: lighter;
+    width: 40px;
+}
+
+#search.focus .cancel {
+    right: 36px;
+}
+
+.autocomplete {
+    top: 96px;
+    width: 97%;
+    margin: 0 1%;
+    max-height: 280px;
+    z-index: 30;
+    position: absolute;
+    overflow: auto;
+    background-color: white;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #ffffff;
+    text-align: left ;
+}
+
+.autocomplete a {
+    text-decoration: none;
+    display: block;
+    margin: 15px 0;
+}
+
+.autocomplete .terms,
+.autocomplete .products {
+    padding: 0 3%;
+}
+
+.autocomplete .sugestion-title {
+    color: #0083ca;
+    padding-top: 6px;
+}
+
+.autocomplete .sugestion-item {
+    font-size: 14px;
+    color: #404040;
+    line-height: 13px;
+}
+
+#banner {
+    text-align: center;
+}
+
+.top-banner {
+    min-width: 0;
+    width: 100%;
+}
+
+.top-banner a {
+    margin: 0 auto;
+    display: block;
+    max-width: 600px;
+}
+
+.top-banner .rsSlide.banner-loading-holder {
+    height: 100%;
+}
+
+.top-banner,
+.top-banner .rsOverflow,
+.top-banner .rsSlide,
+.top-banner .rsVideoFrameHolder,
+.top-banner .rsThumbs {
+    background: #fff;
+    color: #000;
+}
+
+.container.lf .top-banner .rsBullets {
+    display: none ;
+}
+
+.top-banner .rsBullets {
+    background: none;
+    bottom: 4px;
+}
+
+.top-banner .rsBullets span {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+}
+
+.top-banner .rsBullets .rsNavSelected span {
+    width: 10px;
+    height: 10px;
+    background-color: #0082ca;
+}
+
+.top-banner img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+nav.list .list-banner {
+    text-align: center;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+nav.list .desc {
+    background: #fff;
+    border-bottom: 1px solid #E3E3E3;
+    padding: 5px 10px;
+    color: #848484;
+    font-size: 11px;
+}
+
+.info {
+    display: none ;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.info p {
+    padding: 5px 10px;
+    color: #848484;
+}
+
+footer .link {
+    height: 112px;
+    padding: 0 13px;
+}
+
+footer .link a {
+    text-decoration: none;
+    display: block;
+    color: #404040;
+    padding-top: 1px;
+}
+
+footer .last-viewed {
+    display: block;
+    overflow: hidden;
+    border-top: 15px solid #f4f4f4;
+}
+
+footer .last-viewed a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 15px 10px 41px 10px;
+}
+
+footer .last-viewed .title {
+    color: #404040;
+    font-size: 18px;
+    float: left;
+    font-weight: lighter;
+}
+
+footer .last-viewed .icon-right-arrow {
+    float: right;
+    color: #404040;
+}
+
+footer .ml-info-box span {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: lighter;
+    display: block;
+    text-align: center;
+}
+
+footer .ml-info-box a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer .ml-info-box .desktop {
+    background: #0083ca;
+}
+
+.container.black footer .ml-info-box .desktop {
+    background: #1d2f36 ;
+}
+
+.container.lf footer .ml-info-box .desktop {
+}
+
+footer .ml-info-box .desktop p {
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 17px;
+}
+
+footer .ml-info-box .desktop span {
+    padding: 14px 22px;
+    opacity: 0.8;
+    line-height: 15px;
+}
+
+footer .ml-info-box .general {
+    background: #0073b1;
+}
+
+.container.black footer .ml-info-box .general {
+    background: #000000 ;
+}
+
+.container.lf footer .ml-info-box .general {
+}
+
+footer .ml-info-box .general span {
+    padding: 15px 22px;
+    line-height: 16px;
+    opacity: 0.6;
+}
+
+#category-name p{
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 10px;
+    color: #404040;
+    background-color: #eaeaea;
+}
+
+.box-adx {
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 93%;
+    padding: 25px 0;
+}
+
+.box-adx .adx {
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.box-adsense {
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 93%;
+    padding: 25px 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+.box-adsense #adsense-wrapper {
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.trends-container {
+    display: none;
+    text-align: left;
+    line-height: normal;
+}
+
+.home-fallback {
+    display: none;
+    text-align: left;
+    line-height: normal;
+}
+
+.hide-trends {
+    height: 190px;
+}
+
+.trends-opacity {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.trends-opacity img {
+    height: 190px;
+    width: 100%;
+    position: relative;
+}
+
+.trends-opacity p {
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    width: 100%;
+    font-size: 14px;
+    color: #0083ca;
+    text-decoration: underline;
+}
+
+.person-container{
+    display: none;
+    text-align: left;
+    line-height: normal;
+}
+
+.ml-loading{
+    background: url(../../img/loading.gif) no-repeat;
+    background-size: 100%;
+    width: 60px;
+    height: 60px;
+}
+.blue{
+    color: #0083ca;
+}
