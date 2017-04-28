@@ -1,4 +1,7 @@
 amp-sidebar {
   width: 85%;
-  max-width: 85vw!important;
+  max-width: 85vw;
+}
+aside::-webkit-scrollbar { 
+    display: none;
 }
